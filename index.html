@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lifeinkaef Uploader</title>
+<style>
+:root{--bg:#f7f6fb;--fg:#1d1a2b;--muted:#5d5873;--accent:#6b2fc0}
+@media (prefers-color-scheme:dark){:root{--bg:#13111c;--fg:#ebe8f5;--muted:#a39dba;--accent:#b48cf2;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times New Roman",serif;padding:40px 16px 64px}
+main{max-width:66ch;margin:0 auto}
+h1,h2,h3,nav,.app,.date{font-family:"Helvetica Neue",Arial,sans-serif}
+.app{font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:34px;line-height:1.15;margin:8px 0 16px}
+h2{font-size:24px;margin:0 0 8px}
+h3{font-size:17px;margin:18px 0 4px}
+nav{display:flex;gap:20px;flex-wrap:wrap;margin:16px 0}
+a{color:var(--accent)}
+section{border-top:2px solid var(--fg);padding-top:24px;margin-top:40px}
+p,ul{margin:0 0 8px}
+.date{color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<div class="app">Lifeinkaef Uploader</div>
+<h1>Terms of Service and Privacy Policy</h1>
+<p>Lifeinkaef Uploader is a small desktop tool used by the streamer behind <a href="https://www.twitch.tv/lifeinkaef">twitch.tv/lifeinkaef</a> to send clips of their own Twitch streams to their own TikTok account as drafts.</p>
+<nav><a href="#terms">Terms of Service</a><a href="#privacy">Privacy Policy</a></nav>
+<p class="date">Effective 27 October 2026</p>
+
+<section id="terms">
+<h2>Terms of Service</h2>
+<h3>What the tool does</h3>
+<p>The tool uploads short video clips, made from the operator's own streams, to the operator's TikTok account through the TikTok Content Posting API. Clips arrive in the TikTok inbox as drafts. Nothing is published until the account owner opens the draft in the TikTok app and publishes it.</p>
+<h3>Who may use it</h3>
+<p>The tool is run only by its operator for their own TikTok account. It does not post on behalf of anyone else.</p>
+<h3>Content</h3>
+<p>The operator is responsible for the clips they upload and for following the TikTok Terms of Service and Community Guidelines.</p>
+<h3>No warranty</h3>
+<p>The tool is provided as is. It may stop working if the TikTok API changes.</p>
+<h3>Contact</h3>
+<p>Questions go to the operator through twitch.tv/lifeinkaef.</p>
+</section>
+
+<section id="privacy">
+<h2>Privacy Policy</h2>
+<h3>Data the tool receives from TikTok</h3>
+<ul>
+<li>An access token for the operator's own TikTok account, granted through TikTok Login Kit.</li>
+<li>Basic profile information (user.info.basic), used only to confirm which account is signed in.</li>
+</ul>
+<h3>How the data is used</h3>
+<p>The token is used only to upload the operator's clips as drafts (video.upload). It is stored in a local file on the operator's computer and is never sent anywhere except to TikTok.</p>
+<h3>What the tool does not do</h3>
+<ul>
+<li>It does not collect data about other TikTok users or viewers.</li>
+<li>It does not sell, share, or analyse personal data.</li>
+<li>It does not use analytics, cookies, or advertising trackers.</li>
+</ul>
+<h3>Deleting data</h3>
+<p>The operator can revoke access at any time in TikTok settings under Security, Manage app permissions, and delete the local token file.</p>
+</section>
+</main>
+</body>
+</html>
